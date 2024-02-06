@@ -1,122 +1,528 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-   <meta charset="UTF-8">
-   <head>
-     <title>My Page Title</title>
-     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-   </head>
-   <meta name="viewport" content="width=device-width,initial-scale=1">
-   <link rel="stylesheet" href="">
-   <style>
-      @import url("https://fonts.googleapis.com/css?family=Indie+Flower");
-      body {
-      }
-      .cont {
-      margin: 80px auto;
-      width: 80%;
-      }
-      .is-animate {
-      background: #ffb200;
-      box-sizing: border-box;
-      font-size: 66px;
-      display: -webkit-inline-box;
-      padding: 14px;
-      border-radius: 7px;
-      }
-      .is-animate > div {
-      animation-name: style;
-      display: -webkit-inline-box;
-      color: #fff;
-      padding: 9px;
-      background: #ffb200;
-      font-family: "Indie Flower", cursive;
-      box-shadow: 2px 2px 9px 2px;
-      }
-      .l {
-      animation: letterspacing 1s infinite alternate cubic-bezier(0.2, 0, 0, 1);
-      }
-      .is-animate > div {
-      animation-duration: 1s;
-      animation-fill-mode: both;
-      animation-iteration-count: infinite;
-      }
-      .is-animate > div:nth-child(1) {
-      animation-delay: 0s;
-      }
-      .is-animate > div:nth-child(2) {
-      animation-delay: 0.1s;
-      }
-      .is-animate > div:nth-child(3) {
-      animation-delay: 0.2s;
-      }
-      .is-animate > div:nth-child(4) {
-      animation-delay: 0.3s;
-      }
-      .is-animate > div:nth-child(5) {
-      animation-delay: 0.4s;
-      }
-      .is-animate > div:nth-child(6) {
-      animation-delay: 0.5s;
-      }
-      .is-animate > div:nth-child(7) {
-      animation-delay: 0.6s;
-      }
-      @keyframes style {
-      from {
-      transform: scale3d(1, 1, 1);
-      }
-      30% {
-      box-shadow: 0px 0px 0px 0px;
-      transform: scale3d(1.25, 0.75, 1);
-      }
-      40% {
-      transform: scale3d(0.75, 1.25, 1);
-      }
-      50% {
-      transform: scale3d(1.15, 0.85, 1);
-      }
-      65% {
-      transform: scale3d(0.95, 1.05, 1);
-      }
-      75% {
-      transform: scale3d(1.05, 0.95, 1);
-      }
-      to {
-      transform: scale3d(1, 1, 1);
-      }
-      }
-      @keyframes letterspacing {
-      0% {
-      filter: blur(0.1rem);
-      }
-      100% {
-      filter: blur(0.5rem);
-      }
-      to {
-      letter-spacing: none;
-      filter: blur(0rem);
-      }
-      }
-   </style>
-   <script src=""></script>
-   <body>
-      <div class="cont">
-      <div class='is-animate'>
-         <div class="l">C</div>
-         <div class="l">R</div>
-         <div class="l">E</div>
-         <div class="l">a</div>
-         <div class="l">t</div>
-         <div class="l">i</div>
-         <div class="l">n</div>
-         <div class="l">g</div>
-         <div class="l">...</div>
-      </div>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <h2 style="color:#fff;">something else:</h2>
-      </div
-   </body>
-</html>
 
+<head>
+   <!-- Metadata of the Webpage -->
+   <!-- Character-set Metadata -->
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <!-- Viewport Metadata -->
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <!-- Description Metadata-->
+   <meta name="description" content="Portfolio Website" />
+   <!-- Author Metadata -->
+   <meta name="author" content="Nuri Özbey" />
+   <!-- Keyword Metadata -->
+   <meta name="keywords" content="Nuri Ozbey, Nuri Ozbey, Nuri Ozbey Msc,
+        Nuri Ozbey Arcelik, Nuri Ozbey Anadolu University
+        Data Scientist Nuri Ozbey, Nuri Ozbey Osmangazi University, Nuri Ozbey Eskisehir
+        Data Engineer Nuri Ozbey, MSc Nuri Ozbey, Nuri Ozbey Site, Nuri Özbey, Nuri Özbey Msc,
+         Nuri Özbey Arcelik, Nuri Özbey Anadolu University, Nuri Özbey Osmangazi University,
+         Nuri Özbey Eskisehir, Nuri Özbey Data Scientist, Nuri Özbey Data Engineer, Nuri Özbey MSc,
+        Nuri Ozbey, Nuri Ozbey Website, Nuri Ozbey Signature" />
+   <!-- Webpage Logo -->
+   <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+   <!-- Webpage Title -->
+   <title>Nuri Özbey</title>
+
+   <!-- Import CSS: Main Stylesheet -->
+   <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+   <div class="home__options">
+      <div class="home_sub_options">
+         <iconify-icon icon="bx:cloud-snow" title="Activate Snow" id="snow-button"></iconify-icon>
+         <iconify-icon icon="lucide:sun" title="Toggle Theme" id="theme-button"></iconify-icon>
+      </div>
+   </div>
+   <div id="particles-js">
+      <div id="subparticle">
+         <div class="header">
+
+            <h1>
+               <span class="site-title">Nuri Özbey</span>
+               <span class="site-description">Data Scientist • Software Engineer • Developer</span>
+            </h1>
+            <div class="header-icons">
+               <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/nuriozbey/">
+                  <i class="icon fa fa-linkedin" aria-hidden="true"></i>
+               </a>
+               <a aria-label="My Github Profile" target="_blank" href="https://github.com/nuriozbey">
+                  <i class="icon fa fa-github-alt" aria-hidden="true"></i>
+               </a>
+               <a aria-label="My Résumé" target="_blank" href="https://nuriozbey.com/resume_nuri.pdf">
+                  <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
+               </a>
+               <a aria-label="Send Email" href="mailto:nuriozbey@gmail.com" target="_blank"><i
+                     class="icon fa fa-envelope"></i></a>
+            </div>
+            <div class="header-links">
+               <a class="link" href="#about" data-scroll>About Me</a>
+               <a class="link" href="#projects" data-scroll>Projects</a>
+            </div>
+         </div>
+         <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+      </div>
+   </div>
+
+   <!-- About Section -->
+   <section id="about">
+      <!-- User Introduction-->
+      <div class="user-details">
+         <h1>My Story</h1>
+         <picture>
+            <source type="image/webp" srcset="./assets/img/webp/main_photo.webp" alt="Professional Me" width="20%"
+               style="border-radius: 50%" />
+            <img src="./assets/img/jpg/main_photo.jpg" alt="Professional Me" width="20%" style="border-radius: 50%" />
+         </picture>
+         <p>
+            I’m an enthusiastic data scientist with a theoretical background in machine learning algorithms. My career
+            journey started with developing machine learning and artificial intelligence algorithms for image processing
+            applications in biomedical and UAV systems.
+            <br><br>
+            After completing my undergraduate education, I started working in a white goods factory that produces big
+            data every second. Doing research and development work with big data collected in this environment turned me
+            into a data
+            scientist.
+            <br><br>
+            I love helping others develop open source applications. Therefore, designing algorithms that make others'
+            jobs easier and contributing to other studies around the
+            world allowed me to discover my passion for data science and artificial intelligence.
+            <br><br>
+            My master's degree education allowed me to deepen my technical knowledge and gain expertise.
+            I constantly continue my lifelong learning journey and support my continuous development with ongoing
+            leadership and personal development trainings
+
+         </p>
+      </div>
+
+      <!-- User Specifics -->
+      <div class="user">
+         <!-- Technology Stack #1: Languages -->
+         <div class="tech">
+            <h2>Languages</h2>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+            <p>My favorite languages for systems programming, software engineering, and data analysis.</p>
+         </div>
+
+         <!-- Technology Stack #2: Front-End -->
+         <div class="tech">
+            <h2>Front-End</h2>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
+            <p>My preferred technologies for front-end web development and component design.</p>
+         </div>
+
+         <!-- Technology Stack #3: Back-End -->
+         <div class="tech">
+            <h2>Back-End</h2>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" />
+            <img
+               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original-wordmark.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original-wordmark.svg" />
+            <!-- <i class="devicon-postgresql-plain-wordmark colored"></i> -->
+            <p>My preferred technologies for back-end web programming and database architecture.</p>
+         </div>
+
+         <!-- Technology Stack #4: Tools -->
+         <div class="tech">
+            <h2>Tools</h2>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg" />
+            <p>My favorite tools for version control, code editing, and container orchestration.</p>
+         </div>
+      </div>
+   </section>
+
+   <!-- Publications Section -->
+   <section id="publications">
+      <div class="user-details">
+         <h1>Publications</h1>
+         <p>
+         <ol class="gradient-list">
+            <li>
+               <h6>
+                  MK Peker, AT Naskali, S Kiliçaslan, N Özbey, "Precise Temperature Control for Sensitive Medicines.",
+                  IEEE Big Data, 2023, 4948-4953, Sorento/Italy, 2023.
+               </h6>
+            </li>
+            <li>
+               <h6>
+                  N. Özbey and MB Gülmezoğlu, "New Geometric Based Features for Facial
+                  Expression Recognition," 2021 1st International Conference on Computing and
+                  Machine Intelligence (ICMI), Istanbul, 2021.
+               </h6>
+            </li>
+            <li>
+               <h6>
+                  I.Milci, N. Özbey and E. Corga, "Field Fault Analysis with Advanced Data
+                  Analysis
+                  and Life Test Time Simulation with Field Analysis" , Applied Reliability and
+                  Durability Conference, Ankara , 2020.
+               </h6>
+            </li>
+            <li>
+               <h6>
+                  N. Özbey, G.Erteği and A.Oner, "Runway Detection during Landing with Neural
+                  Network
+                  Based Image Processing", International Eurasian Conference on Science,
+                  Engineering
+                  and Technology , Ankara, 2018.
+               </h6>
+            </li>
+            <li>
+               <h6>
+                  N. Özbey and C. Topal, "Expression recognition with appearance-based features of
+                  facial landmarks," 2018 26th Signal Processing and Communications Applications
+                  Conference (SIU), Izmir, 2018, pp. 1-4, doi: 10.1109/SIU.2018.8404541.
+               </h6>
+            </li>
+         </ol>
+         </p>
+      </div>
+   </section>
+
+   <!-- Certifications Section -->
+   <section id="certifications">
+      <div class="user-details">
+         <h1>Certifications</h1>
+         <div class="certi-table">
+            <div class="certi-list">
+               <div class="certificate-item clearfix">
+                  <div class="certi-logo">
+                     <img src="assets/img/certificate_logo/coursera.jpg" alt="logo">
+                  </div>
+                  <div class="certi-content">
+                     <div class="certi-title">
+                        <h4>Data Science on Google Cloud</h4>
+                     </div>
+                     <div class="certi-id">
+                        <span>ID: 6FEZTXEKSAWK</span>
+                     </div>
+                     <div class="certi-date">
+                        <span>08 December 2021</span>
+                     </div>
+                     <div class="certi-company">
+                        <span><a href="https://www.coursera.org/account/accomplishments/certificate/6FEZTXEKSAWK">see
+                              credential</a></span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="certi-list">
+               <div class="certificate-item clearfix">
+                  <div class="certi-logo">
+                     <img src="assets/img/certificate_logo/coursera.jpg" alt="logo">
+                  </div>
+                  <div class="certi-content">
+                     <div class="certi-title">
+                        <h4>Data Science on Google Cloud</h4>
+                     </div>
+                     <div class="certi-id">
+                        <span>ID: 6FEZTXEKSAWK</span>
+                     </div>
+                     <div class="certi-date">
+                        <span>08 December 2021</span>
+                     </div>
+                     <div class="certi-company">
+                        <span><a href="https://www.coursera.org/account/accomplishments/certificate/6FEZTXEKSAWK">see
+                              credential</a></span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+            <div class="certi-list">
+               <div class="certificate-item clearfix">
+                  <div class="certi-logo">
+                     <img src="assets/img/certificate_logo/amazon.jpg" alt="logo">
+                  </div>
+                  <div class="certi-content">
+                     <div class="certi-title">
+                        <h4>The Elements of Data Science</h4>
+                     </div>
+                     <div class="certi-id">
+                        <span>ID: ZScXZf1oG02tjShvDiiZyw2</span>
+                     </div>
+                     <div class="certi-date">
+                        <span>08 December 2021</span>
+                     </div>
+                     <div class="certi-company">
+                        <span><a
+                              href="https://www.aws.training/Transcript/CompletionCertificateHtml?transcriptid=ZScXZf1oG02tjShvDiiZyw2">see
+                              credential</a></span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+            <div class="certi-list">
+               <div class="certificate-item clearfix">
+                  <div class="certi-logo">
+                     <img src="assets/img/certificate_logo/sparta.jpg" alt="logo">
+                  </div>
+                  <div class="certi-content">
+                     <div class="certi-title">
+                        <h4>Cyber Threat Hunting</h4>
+                     </div>
+                     <div class="certi-id">
+                        <span></span>
+                     </div>
+                     <div class="certi-date">
+                        <span>14 June 2020</span>
+                     </div>
+                     <div class="certi-company">
+                        <span><a
+                              href="https://eu.badgr.com/public/assertions/FnkwYxQQQ4OQqs7ly4MYAw?identity__email=nuriozbey@gmail.com">see
+                              credential</a></span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+            <div class="certi-list">
+               <div class="certificate-item clearfix">
+                  <div class="certi-logo">
+                     <img src="assets/img/certificate_logo/coursera.jpg" alt="logo">
+                  </div>
+                  <div class="certi-content">
+                     <div class="certi-title">
+                        <h4>AI For Everyone</h4>
+                     </div>
+                     <div class="certi-id">
+                        <span>ID: S8728ZSPKN5J</span>
+                     </div>
+                     <div class="certi-date">
+                        <span>08 December 2021</span>
+                     </div>
+                     <div class="certi-company">
+                        <span><a href="https://www.coursera.org/account/accomplishments/certificate/S8728ZSPKN5J">see
+                              credential</a></span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+            <div class="certi-list">
+               <div class="certificate-item clearfix">
+                  <div class="certi-logo">
+                     <img src="assets/img/certificate_logo/coursera.jpg" alt="logo">
+                  </div>
+                  <div class="certi-content">
+                     <div class="certi-title">
+                        <h4>Introduction to Big Data</h4>
+                     </div>
+                     <div class="certi-id">
+                        <span>ID: W8963GLVP3JB</span>
+                     </div>
+                     <div class="certi-date">
+                        <span>29 June 2021</span>
+                     </div>
+                     <div class="certi-company">
+                        <span><a href="https://www.coursera.org/account/accomplishments/certificate/W8963GLVP3JB">see
+                              credential</a></span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+            <div class="certi-list">
+               <div class="certificate-item clearfix">
+                  <div class="certi-logo">
+                     <img src="assets/img/certificate_logo/fcovey.jpg" alt="logo">
+                  </div>
+                  <div class="certi-content">
+                     <div class="certi-title">
+                        <h4>The 7 Habits of Highly Effective People</h4>
+                     </div>
+                     <div class="certi-id">
+                        <span></span>
+                     </div>
+                     <div class="certi-date">
+                        <span>08 December 2021</span>
+                     </div>
+                     <div class="certi-company">
+                        <span>FranklinCovey</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+            <div class="certi-list">
+               <div class="certificate-item clearfix">
+                  <div class="certi-logo">
+                     <img src="assets/img/certificate_logo/coursera.jpg" alt="logo">
+                  </div>
+                  <div class="certi-content">
+                     <div class="certi-title">
+                        <h4>AWS Fundamentals Specialization</h4>
+                     </div>
+                     <div class="certi-id">
+                        <span>ID: 5ASTEKUNSKHQ</span>
+                     </div>
+                     <div class="certi-date">
+                        <span>30 March 2021</span>
+                     </div>
+                     <div class="certi-company">
+                        <span><a href="https://www.coursera.org/account/accomplishments/certificate/5ASTEKUNSKHQ">see
+                              credential</a></span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+            <div class="certi-list">
+               <div class="certificate-item clearfix">
+                  <div class="certi-logo">
+                     <img src="assets/img/certificate_logo/coursera.jpg" alt="logo">
+                  </div>
+                  <div class="certi-content">
+                     <div class="certi-title">
+                        <h4>Introduction to Data Science in Python</h4>
+                     </div>
+                     <div class="certi-id">
+                        <span>ID: PJFSGFUSB5PC</span>
+                     </div>
+                     <div class="certi-date">
+                        <span>28 October 2020</span>
+                     </div>
+                     <div class="certi-company">
+                        <span><a href="https://www.coursera.org/account/accomplishments/certificate/PJFSGFUSB5PC">see
+                              credential</a></span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+            <div class="certi-list">
+               <div class="certificate-item clearfix">
+                  <div class="certi-logo">
+                     <img src="assets/img/certificate_logo/qlik.jpg" alt="logo">
+                  </div>
+                  <div class="certi-content">
+                     <div class="certi-title">
+                        <h4>Create Visualizations with Qlik Sense</h4>
+                     </div>
+                     <div class="certi-id">
+                        <span></span>
+                     </div>
+                     <div class="certi-date">
+                        <span>29 December 2019</span>
+                     </div>
+                     <div class="certi-company">
+                        <span>BI Technology Qlik Master Reseller</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+            <div class="certi-list">
+               <div class="certificate-item clearfix">
+                  <div class="certi-logo">
+                     <img src="assets/img/certificate_logo/qlik.jpg" alt="logo">
+                  </div>
+                  <div class="certi-content">
+                     <div class="certi-title">
+                        <h4>Data Modeling for Qlik Sense</h4>
+                     </div>
+                     <div class="certi-id">
+                        <span></span>
+                     </div>
+                     <div class="certi-date">
+                        <span>08 December 2019</span>
+                     </div>
+                     <div class="certi-company">
+                        <span>BI Technology Qlik Master Reseller</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+            <div class="certi-list">
+               <div class="certificate-item clearfix">
+                  <div class="certi-logo">
+                     <img src="assets/img/certificate_logo/amazon.jpg" alt="logo">
+                  </div>
+                  <div class="certi-content">
+                     <div class="certi-title">
+                        <h4>Machine Learning Security</h4>
+                     </div>
+                     <div class="certi-id">
+                        <span></span>
+                     </div>
+                     <div class="certi-date">
+                        <span>24 December 2021</span>
+                     </div>
+                     <div class="certi-company">
+                        <span><a
+                              href="https://drive.google.com/file/d/1J8YPFRsA__yYWDjtIJCW4ctloMSQN4vJ/view?usp=sharing">see
+                              credential</a></span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+            <div class="certi-list">
+               <div class="certificate-item clearfix">
+                  <div class="certi-logo">
+                     <img src="assets/img/certificate_logo/amazon.jpg" alt="logo">
+                  </div>
+                  <div class="certi-content">
+                     <div class="certi-title">
+                        <h4>Exploring the Machine Learning Toolset</h4>
+                     </div>
+                     <div class="certi-id">
+                        <span></span>
+                     </div>
+                     <div class="certi-date">
+                        <span>24 December 2021</span>
+                     </div>
+                     <div class="certi-company">
+                        <span><a
+                              href="https://drive.google.com/file/d/1Z1sKMqejktUAqS6Z95UyFW8ChNx9r8Fn/view?usp=sharing">see
+                              credential</a></span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <!-- Footer Section -->
+   <footer class="footer">
+      <p>&copy; Nuri ÖZBEY, 2024</p>
+   </footer>
+   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+   <!-- Import JS: Particles Theme -->
+   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+   <!-- Import JS: Sweet Scroll -->
+   <script src="./assets/js/sweet-scroll.min.js"></script>
+   <!-- Import JS: Google Analytics -->
+   <script src="./assets/js/google-analytics.js"></script>
+   <!-- Import JS: Main Script -->
+   <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
